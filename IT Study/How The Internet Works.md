@@ -6,6 +6,9 @@
 # Terms
 - *OSI Model:* 
 - *Media Access Control (MAC):*
+- *Datagram:*
+# Miscellaneous
+- All the standards and protocols are defined by IEEE. All of their standards have a different code number. Standards starting with 802 define LAN technologies (Like ethernet, which is 802.3). Standards for different ethernet standards are separated by letters, like 802.3i, which defines 10Mbps, 802.u, which defines 100Mbps, ect. The different standards also have names. 802.3an has the name 10GBASE-T, 10G defines the speed at which it operates. Base is short for baseband which means data transmits digitally using cables vs broadband which transmits data analogue wirelessly. The T means that its a un-shielded twisted pair (UTP) cable (The most common type of copper cable).
 # Notes
 - All devices connected to the internet are either hosts or end systems
 	- What is a host?:
@@ -35,7 +38,8 @@
 			- *Wireless Access Point (WAP):* Allows wireless devices to connect to a wired network. Exists on the data link layer because by managing wireless MAC addresses.
 			- *Layer 2 Switch:* Specialized switches that only operate at layer 2, unlike multi-layer switches. Responsible for frame forwarding using MAC address tables
 		- Packets from the network layer have to be turned into MAC frames to be transferred over ethernet/ wifi. Your NIC converts a packet into a MAC frame. By default, MAC frames will be Ethernet II instead of LLC, which depending on the type, the frame will be structured differently:
-			- Ethernet II: Starts with a "preamble" section of 7 bytes containing alternating 1s and 0s for synchronization **(How does that work?)**. Then 1 byte for the Start Frame Delimiter (SFD) containing 0xAB. Then 6 bytes for the destination MAC address, and 6 bytes for the source MAC address.
+				- Ethernet II: Starts with a "preamble" section of 7 bytes containing alternating 1s and 0s for synchronization **(How does that work?)**. Then 1 byte for the Start Frame Delimiter (SFD) containing 0xAB. Then, we reach the actual data. It starts with the header, which contains 6 bytes for the destination MAC address, then 6 bytes for the source MAC address. Then, 2 bytes to identify the layer 3 protocol being used in the payload. Then, the payload is defined, and can range from 46 to 1500 bytes. The payload is where the actual data for the packet is contained. The frame ends with a cyclic redundancy check (CRC) checksum, which is 4 bytes and allows detection of corrupted data **(How?)**.
+				- 
 # Hardware
 - *Hub:* Broadcasts all data sent to it to every device connected to it.
 - *Repeater:* Receives signals sent to it and re-transmits it to improve signal strength
