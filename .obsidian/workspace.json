@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IT Study/How The Internet Works.md",
+                "file": "IT Study/The OSI Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How The Internet Works"
+              "title": "The OSI Model"
             }
           }
         ],
@@ -185,7 +185,7 @@
   },
   "active": "62ca3b106c3c39d1",
   "lastOpenFiles": [
-    "IT Study/How The Internet Works.md",
+    "IT Study/The OSI Model.md",
     "Job Stuff/AT&T Interview Points.md",
     "IT Study",
     "Welcome.md",
