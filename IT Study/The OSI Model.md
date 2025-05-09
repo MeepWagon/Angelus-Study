@@ -8,7 +8,9 @@
 - *OSI Model:* 
 - *Media Access Control (MAC):*
 - *Datagram:*
-- *un-shielded twisted pair (UTP):*
+- *Un-shielded Twisted Pair (UTP):*
+- *Small Office Home Office (SOHO):*
+- *Network Address Translation (NAT):
 # Miscellaneous
 - All the standards and protocols are defined by IEEE. All of their standards have a different code number. Standards starting with 802 define LAN technologies (Like ethernet, which is 802.3). Standards for different ethernet standards are separated by letters, like 802.3i, which defines 10Mbps, 802.u, which defines 100Mbps, ect. The different standards also have names. 802.3an has the name 10GBASE-T, 10G defines the speed at which it operates. Base is short for baseband which means data transmits digitally using cables vs broadband which transmits data analogue wirelessly. The T means that its a un-shielded twisted pair (UTP) cable (The most common type of copper cable). Modern UTP cables contain 4 twisted pairs of cables, each pair forming a circuit. There are even different standards of cables themselves (Like for ethernet, there are Cat5, Cat5e, Cat6, ect.). Each newer standard of cable supports better speed and less interference.
 - The connector that ethernet ports used are called RJ45 connectors. There are two different types of ethernet cords:
@@ -26,11 +28,11 @@
 	- What is an end system?:
 - End systems are connected together via a network of communications links and packet switches.
 - The OSI model is an conceptual abstraction of networking that divides network functions into 7 different layers. Each layer of the OSI model is depends on the operations of the layer under it.
-	- Layer 1 (The physical layer): Transmits raw bit streams over a physical medium.
+	- *Layer 1, the physical layer:* Transmits raw bit streams over a physical medium.
 		- *Physical Layer Functions:* Turning bits of data into signals that can be transmitted over cables (called encoding), and turning these signals back into data at the reciever (decoding). It uses modulation to ensure data is transmitted correctly and demodulation to retrieve it at the other end. This layer also decides how data flows through transmission modes and controls the speed and timing of data transmission.
 		- *Network Topologies:* Networks topologies describe how different devices are connected together. (Expand on this)
 		- *Physical Layer Protocols:* Ethernet, widely used for wired networks. Wi-Fi, for wireless communications. Bluetooth, for short-range wireless communication. And USB, for connecting devices over short ranges.
-	- Layer 2 (The data link layer): Responsible for node to node delivery of data within the LAN. 
+	- *Layer 2, the data link layer:* Responsible for node to node delivery of data within the LAN. 
 		- The data link layer is further divided into sub layers which go as follows:
 			- *Logical Link Control (LLC)/ SNAP:* The sub-layer of the data link layer that deals with synchronization, multiplexing, the flow of data among applications and services, and error checking as well. The basic model of the LLC is modeled after the HDLC protocol. The LLC is encapsulated in the MAC frame.
 			- *Media Access Control (MAC):* The mac sublayer manages device interactions. Responsible for addressing frames, and also controls physical media access. The data link layer receives information in the form of packets from the network layer above it. It divides these packets into "frames" and sends those frames bit-by-bit to the underlying physical layer.
@@ -50,7 +52,15 @@
 			- *Layer 2 Switch:* Specialized switches that only operate at layer 2, unlike multi-layer switches. Responsible for frame forwarding using MAC address tables
 		- Packets from the network layer have to be turned into MAC frames to be transferred over ethernet/ wifi. Your NIC converts a packet into a MAC frame. By default, MAC frames will be Ethernet II instead of LLC, which depending on the type, the frame will be structured differently:
 				- Ethernet II: Starts with a "preamble" section of 7 bytes containing alternating 1s and 0s for synchronization **(How does that work?)**. Then 1 byte for the Start Frame Delimiter (SFD) containing 0xAB. Then, we reach the actual data. It starts with the header, which contains 6 bytes for the destination MAC address, then 6 bytes for the source MAC address. Then, 2 bytes to identify the layer 3 protocol being used in the payload. Then, the payload is defined, and can range from 46 to 1500 bytes. The payload is where the actual data for the packet is contained. The frame ends with a cyclic redundancy check (CRC) checksum, which is 4 bytes and allows detection of corrupted data **(How?)**.
-				- 
+	- *Layer 3, the network layer:*
+		- *Network layer functions:*
+			- Assign local IP addresses: It provides unique IP addresses to devices for identification and communication across networks.
+			- Packetizing: Encapsulates data into packets for efficient transmission.
+			- Host-to-host delivery: Ensures data is delivered from the sender to the intended receiver across networks.
+			- Forwarding: The process of moving packets from the input to the appropriate output interface in a router, based on the destination address.
+			- Fragmentation & Reassembly: Splits large packets into smaller fragments for transmission and reassembles them at the destination.
+			- Logical Subnetting: Divides larger networks into smaller smaller sub-networks for better management and routing efficiency.
+			- Network address translation (NAT):
 # Hardware
 - *Hub:* Broadcasts all data sent to it to every device connected to it.
 - *Repeater:* Receives signals sent to it and re-transmits it to improve signal strength
