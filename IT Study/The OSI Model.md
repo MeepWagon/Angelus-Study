@@ -3,13 +3,23 @@
 - What are all the hardware protocols used to route data?
 - What is modulation/ demodulation at the physical layer?
 - What are data links?
+- What does each cord do in an ethernet cable? How is it different for each different standard?
 # Terms
 - *OSI Model:* 
 - *Media Access Control (MAC):*
 - *Datagram:*
 - *un-shielded twisted pair (UTP):*
 # Miscellaneous
-- All the standards and protocols are defined by IEEE. All of their standards have a different code number. Standards starting with 802 define LAN technologies (Like ethernet, which is 802.3). Standards for different ethernet standards are separated by letters, like 802.3i, which defines 10Mbps, 802.u, which defines 100Mbps, ect. The different standards also have names. 802.3an has the name 10GBASE-T, 10G defines the speed at which it operates. Base is short for baseband which means data transmits digitally using cables vs broadband which transmits data analogue wirelessly. The T means that its a un-shielded twisted pair (UTP) cable (The most common type of copper cable). Modern UTP cables contain 4 twisted pairs of cables, each pair forming a circuit. There are even different standards of cables themselves (Like for ethernet, there are Cat5, Cat5e, Cat6, ect.). Each newer standard of cable supports better speed and less interference. The connector that ethernet ports used are called RJ45 connectors.
+- All the standards and protocols are defined by IEEE. All of their standards have a different code number. Standards starting with 802 define LAN technologies (Like ethernet, which is 802.3). Standards for different ethernet standards are separated by letters, like 802.3i, which defines 10Mbps, 802.u, which defines 100Mbps, ect. The different standards also have names. 802.3an has the name 10GBASE-T, 10G defines the speed at which it operates. Base is short for baseband which means data transmits digitally using cables vs broadband which transmits data analogue wirelessly. The T means that its a un-shielded twisted pair (UTP) cable (The most common type of copper cable). Modern UTP cables contain 4 twisted pairs of cables, each pair forming a circuit. There are even different standards of cables themselves (Like for ethernet, there are Cat5, Cat5e, Cat6, ect.). Each newer standard of cable supports better speed and less interference.
+- The connector that ethernet ports used are called RJ45 connectors. There are two different types of ethernet cords:
+	- *Straight-through:* This is where
+	- *Crossover:*
+- To get around the pain of worrying about which cable you need for your supported devices, there is this thing called auto MDI-X which logically switches the functions of the cables **(Learn and fill out more about this)**.
+- There are two types of fiber:
+	- *Single Mode Fiber:* 
+	- *Multi Mode Fiber:*
+- Wifi uses the 802.11 IEEE standard.
+- 
 # Notes
 - All devices connected to the internet are either hosts or end systems
 	- What is a host?:
