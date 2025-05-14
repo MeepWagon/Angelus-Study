@@ -4,6 +4,7 @@
 - What is modulation/ demodulation at the physical layer?
 - What are data links?
 - What does each cord do in an ethernet cable? How is it different for each different standard?
+- What are all the IEEE standards relevant to networking?
 # Terms
 - *OSI Model:* 
 - *Media Access Control (MAC):*
@@ -60,7 +61,19 @@
 			- Forwarding: The process of moving packets from the input to the appropriate output interface in a router, based on the destination address.
 			- Fragmentation & Reassembly: Splits large packets into smaller fragments for transmission and reassembles them at the destination.
 			- Logical Subnetting: Divides larger networks into smaller smaller sub-networks for better management and routing efficiency.
-			- Network address translation (NAT):
+			- Network address translation (NAT): Maps private IP addresses to public IP addresses for internet access.
+			- Routing: Determines best path for packets to travel to their destination across multiple networks.
+		- *Network layer protocols:*
+			- IP: 
+			- ICMP:
+			- ARP:
+			- RARP:
+			- NAT:
+			- RIP:
+			- OSPF:
+			- BGP:
+			- IPSec:
+			- MPLS: 
 # Hardware
 - *Hub:* Broadcasts all data sent to it to every device connected to it.
 - *Repeater:* Receives signals sent to it and re-transmits it to improve signal strength
