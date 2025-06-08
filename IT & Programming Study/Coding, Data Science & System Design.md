@@ -1,0 +1,78 @@
+# Data Types
+- Primitives:
+# Data Structures
+- Array:
+- Hash Table:
+- Linked List:
+- Tree:
+- Stack:
+# Points
+- Learn how to traverse, create, and manipulate linked lists from the front and back. With iteration and recursion.
+# Problems
+- How do I get a specific digit from an integer? (e.g 2 from 128)
+	- Fill this out.
+# Coding Paradigms
+- Imperative Programming
+- Declarative Programming
+- Functional Programming
+- Data Driven Programming
+- Object Oriented Programming
+- Even Driven Programming
+- Data Flow Programming
+- Aspect Oriented Programming
+- Generic Programming
+# System Design
+- Vertical Scalability:
+- Horizontal Scalability
+- Latency
+- Throughput
+- Goal is to balance scalability & consistency
+- Distributed systems have limitations
+	- Cap Theorem: 
+- Load balancers exist to distribute traffic across servers
+	- Load balancers have multiple algorithms for this
+		- Least Connection Method:
+		- Round Robin
+		- IP Hash
+		- Write other
+- On the web, there is Content Delivery Networks (CDN). They provide cache close to the system requesting the data. Ideal for serving static media.
+- Caching has issues too, like maintaining data consistency, and making sure the cached data is the same as the source data. This is solved through cache invalidation strategies
+	- Write Through: Ensures consistency at cost of write latency
+	- Write Around: Data bypasses cache directly to host. Ensures data consistency but increases latency for new data.
+	- Write Back: Data is written to cache first, later written to storage. Low latency but risks data lost
+	- Cache can reach capacity of data, there needs to a be an "eviction policy" to make room for new data
+		- Least recently used
+		- FIFO
+		- Least frequently used
+- How should data be stored?:
+	- SQL: Relational database. Store data in tables with predefined schemas (?)
+	- NoSQL: Non-relational databases, come in 4 main types
+		- Key-value stores (Redis)
+		- Document Database (MongoDB, firebase)
+		- Wide-Column stores (cassandra)
+		- Graph database (neo4j)
+- SQL has a rigid schema while nosql has a flexible schema (?)
+- SQL follows ACID principles, nosql usually doesnt
+- SQL useful in business applications with assured reliability. Like financial applications.
+- Database indexes:
+	- Primary Key: Unique identifier for each record
+	- Secondary Index: Additional indexes on non-primary key columns
+	- Composite Index
+- Foreign key in a record is a constraint that enforces a relationship between columns and different tables.
+- Partitioning is the process of breaking data up into smaller more manageable parts
+	- Horizontal Partitioning (sharding)
+	- Vetical Partitioning
+	- Directory-based Partitioning
+	- Different methods of hashing
+		- Consistent Hashing
+		- List partitioning
+		- Round Robin
+		- Composite Partitioning
+- As the number of concurrent sockets grow, performance degrades due to contention and resource exhaustion. This limitation is addressed using
+	- Non-blocking IO/ Async IO
+	- Event driven architectures
+- TCP sockets contain a finite state machine
+- UDX sockets use a file path instead of a network location, which makes them faster, being able to bypass the network stack
+- Sockets are inherently insecure. Socket security is usually achieved with TLS (transport layer security)
+# Questions
+- What is a file descriptor?

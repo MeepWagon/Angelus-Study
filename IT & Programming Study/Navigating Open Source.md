@@ -1,0 +1,8 @@
+- Use tools to tag related files & functions
+- Narrow down the entry point & follow the code flow
+	- Identify how a feature is triggered
+	- Follow data structures, like types
+	- Use a debugger
+- Create a flowchart of how different systems work together
+- Utilize git blame to understand why lines of code were changed/ added
+- Review the documentation. Some projects talk about the inner-workings of the project in the docs

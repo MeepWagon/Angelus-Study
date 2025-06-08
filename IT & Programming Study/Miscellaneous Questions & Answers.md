@@ -1,0 +1,11 @@
+- What is database normalization?
+	- [Here](https://www.youtube.com/watch?v=GFQaEYEc8_8) is a related video
+- What makes a static library different from a dynamic library on a low-level?
+- What is the "discriminate". I've heard this in the context of the quadratic equation on the topic of raytracing.
+- What is an enum? What is a struct? Talking about how they're represented & accessed in binary.
+- What are affine transformations? Why cant they turn parallel lines into non-parallel lines?
+- What is the ear-clipping algorithm?
+- What is a mesh optimization algorithm?
+- "Several dynamically-typed languages (e.g., the original implementation of Smalltalk80) use spare bits in each pointer to store the value’s type tag. ==This trick works in most machines because, due to alignment, the last two or three bits of a pointer are always zero, and therefore can be used for other purposes==" Why?
+- What is a registry? I know Windows has a registry that you can edit with regedit, and Lua has a registry table. But what are they trying to represent that makes them similar?
+- 

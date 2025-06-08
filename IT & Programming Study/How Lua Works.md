@@ -1,0 +1,19 @@
+- Files necessary to compile lua: luaxlib, lstate, ldebug, ldo, lfunc, lgc, lmem, lobject, lstring, ltable, ltm, lundump, lvm.c, lmathlib.c, lopcodes, lzio, lparser, ldump
+- Files unecessary  to compile lua: lapi, lbaselib, lcode, lcorolib (probably for coroutines), lctype, ldblib, 
+- Lua uses a "while-switch dispatch loop". (Learn more about what that is)
+- Lua types are "attached to values rather than variables". What does that mean? I suspect the "rather than variables" part means instead of writing the data type next to the variable name, it attaches the type to the value. But that's the part I don't understand.
+- 
+# Questions
+- What is a register-based virtual machine?
+	- 
+- What is a recursive descent parser?
+- What is direct threaded code? And why isn't it portable?
+- What are associative arrays?
+	- Is 
+- What is a first-class value? What are the other classes of values?
+- "Booleans and numbers are implemented as 'unboxed' values". What does this mean??
+- What is a union? How is it different from a struct?
+- "Strings, tables, functions, threads, and userdata values are implemented by reference: v contains pointers to structures that implement those values. Those structures share a common head, which keeps information needed for garbage collection." What does this mean exactly? How is this implemented in the source code?
+- Several dynamically typed languages use spare bits in each pointer to store the values type (as opposed to Lua using a whole byte). But the technique is not portable, and doesnt work with ANSI C (Why?). The C standard does not even ensures that a pointer fits in any ==integral== type and so there is no standard way to perform bit manipulation over pointers. (what does this mean? What is an integral?)
+- For less overhead when creating variables, it would be better to use an explicit tag instead of an integer tag. Why?
+- 

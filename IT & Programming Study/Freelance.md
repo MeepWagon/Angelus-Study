@@ -1,0 +1,105 @@
+# Services
+- Full-stack Web Development:
+	- Front-end Development:
+		- Create websites using React & Angular
+		- Create websites using pure HTML, CSS & JavaScript
+	- Back-end Development:
+		- Learn more about this
+- Native/ Cross-platform Application Development:
+	- Create apps using HTML/ CSS rendering library
+	- Create apps using typical libraries (research more into this)
+- Basic Web Designing:
+	- Create web designs in Figma, prototypes in framer
+- Roblox Development:
+	- Create systems to be implemented in games
+	- Handle the programming in a game
+# Pricing
+- Full-stack Web Development:
+	- Front-end Development:
+		- 1.5 hours per page, 26$/hr
+	- Back-end Development:
+		- 2.5 hours per system, 30$/hr
+- Native/ Cross-platform Application Development:
+	- 6 hours per application, 32$/hr
+- Basic Web Designing:
+	- 1.5 hours per page, 22$/hr
+- Roblox Development:
+	- 2 hours per system, 20$/hr
+# Improvement Projects
+- Full-stack Web Development:
+	- Portfolio website
+	- Build web designs
+- Roblox Development:
+	- Inverse Kinematic Animations (footplanting)
+	- First Person Shooter System
+	- Melee Combat System
+		- Combat VFX
+	- Menu GUI
+	- Wall Walking
+	- Smart AI
+	- Projectile trajectories
+	- Vehicle physics
+	- Soft-body physics
+	- 3D transformations
+	- LOD system
+	- 2D & 3D pathfinding
+	- Flocking algorithms
+	- Dynamic weather
+	- Destructible environments
+- Native Development:
+	- Create HTML & CSS + C 2D Rendering & UI library
+	- Create native applications using HTML & CSS rendering library
+	- Become proficient with SDL & OpenGL
+	- Shaders & lighting calculations
+	- Texture mapping & UV coordinate calculations
+	- Simple raytraced 3D environment game
+	- NES Emulator
+- Create apps that perform the following:
+	- Analytics & Monitoring (User behavior tracking, crash reporting, performance monitoring)
+	- Admin & Back-end control (User management, content management system, A/B testing)
+	- Ad integration
+	- GDPR/CCPA compliance & Age restriction/ Parental controls
+	- 3D environments
+	- Logistics (bar code scanning, shipment tracking)
+	- Multi-language support
+	- Data exporting
+	- Advanced UI animations
+	- Subscriptions & payments
+	- CRUD (Maybe remove this?)
+	- Database management (Either cloud or local)
+	- Data encryption & authentication
+	- Image processing
+	- IoT device control
+	- Hardware interfacing
+	- Interprocess communication
+	- Multithreading
+	- Overriding linux & windows UI
+	- Networking
+		- Client-server reconciliation using mathematical models
+		- Interpolation and extrapolation for smooth multiplayer movement
+		- Lag compensation and prediction algorithms
+		- Data compression for network packets
+	- Driver creation
+# Requirements To Start
+- Create 6 native applications
+- Create 5 websites (Excluding portfolio)
+- Create all Roblox projects
+- Skill to implement features from opensource code
+- Skill to complete any Leetcode question, most optimal answer in a timely manner
+- Become proficient with meson, ninja, and cmake
+# Math Topics
+- Understand transformations & matrices
+- Understand utilizing the dot/ cross product
+- Understand Fourier transformations & Creating that match certain outputs (like making a function that hits all predefined goal points) 
+- Trigonometry
+- Geometry
+- Linear Algebra
+- Basic Calculus
+- Differential Equations
+- Computational geometry
+- Fourier analysis
+- Graph theory
+# Simulation (Delete Later)
+- (old) 2 Week Period: 1 Front-end Project w/ 3 pages, 1 Full-stack project w/ 5 pages, 1 Roblox system, 2 Native applications, 2 Web designs w/ 4 pages: 50 hours, 998.5$ (old)
+- 2 Week Period: 1 Front-end Project w/ 3 pages, 2 Full-stack projects w/ 5 pages, 1 Roblox system, 1 Native application: 1. 4.5 hrs, 117$ 2. 15/25 hrs, 1140$, 3. 2 hrs, 40 4. 6 hours, 180 Overall: 52.5hrs, 1477D
+- 2 Week: Period 3 Full-stack projects w/ 5 pages, 1 Native application, 2 Web designs
